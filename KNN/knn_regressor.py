@@ -1,11 +1,15 @@
+#!/usr/bin/env python
+# coding=utf-8
 '''
-Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
-Date: 2025-12-07 00:59:25
-LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
-LastEditTime: 2025-12-07 01:14:49
-FilePath: \Machine Learing\KNN\knn_regressor.py
-Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+FilePath     : /MachineLearing/KNN/knn_regressor.py
+Description  :  None
+Author       : fei.zong zongfei2019@outlook.com
+Version      : 0.0.1
+LastEditors  : fei.zong zongfei2019@outlook.com
+LastEditTime : 2025-12-08 00:26:36
+Copyright    : G AUTOMOBILE RESEARCH INSTITUTE CO.,LTD Copyright (c) 2025.
 '''
+
 from sklearn.neighbors import KNeighborsRegressor
 
 
@@ -16,7 +20,7 @@ from sklearn.neighbors import KNeighborsRegressor
 '''
 x_train = [[0, 1, 1], [1, 1, 0], [3, 10, 10], [4, 11, 12]]
 y_train = [0.1, 0.2, 0.3, 0.4]
-x_test = [3, 11, 10]
+x_test = [[3, 11, 10]]
 
 #创建模型
 estimator = KNeighborsRegressor(n_neighbors=3)
